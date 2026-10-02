@@ -13,9 +13,9 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Dilip - Portfolio",
+  title: "Dilip Asdeo — Full-Stack & GenAI Engineer",
   description:
-    "Portfolio of Dilip Asdeo — Full-Stack Developer and GenAI Builder.",
+    "Portfolio of Dilip Asdeo: full-stack developer building web applications, backend systems, RAG products, and agentic AI tools.",
 };
 
 export default function RootLayout({
@@ -25,7 +25,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${spaceGrotesk.variable}`}>
+      <body
+        className={`${inter.variable} ${spaceGrotesk.variable} font-sans antialiased`}
+      >
+        <div className="pointer-events-none fixed inset-0 -z-10 bg-grid-fade bg-grid opacity-[0.35]" />
         {children}
       </body>
     </html>
